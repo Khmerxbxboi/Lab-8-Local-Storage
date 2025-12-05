@@ -3,37 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sodaro Data Sync | Lab 8</title>
+  <title>Sodaro Data Sync — Lab 8</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-  <header>
-    <h1>SODARO DATA SYNC</h1>
-    <p class="subtitle">Offline Persistence • API Intelligence • IndexedDB</p>
-  </header>
 
-  <main>
-    <section id="controls">
-      <button id="fetchBtn">Fetch Latest Data</button>
-      <p id="status"></p>
-    </section>
+<header>
+  <img src="sodaro_logo.png" id="logo" alt="Sodaro Logo">
+  <h1>SODARO DATA SYNC</h1>
+  <p>Local Storage • IndexedDB • API Intelligence</p>
+</header>
 
-    <section class="data-section">
-      <h2>Bitcoin Price</h2>
-      <div id="btcOutput" class="output-box">No data yet…</div>
-    </section>
+<main>
 
-    <section class="data-section">
-      <h2>Random User</h2>
-      <div id="userOutput" class="output-box">No data yet…</div>
-    </section>
-  </main>
+  <section id="controls">
+    <button id="fetchBtn">Fetch Latest Data</button>
+    <p id="status"></p>
+  </section>
 
-  <footer>
-    <p>Powered by Sodaro • Lab 8: Local Storage + IndexedDB</p>
-  </footer>
+  <!-- Crypto Output Sections -->
+  <section class="data-section">
+    <h2>Bitcoin Price</h2>
+    <div id="btcOutput" class="output-box">Loading…</div>
+  </section>
 
-  <script src="app.js"></script>
+  <section class="data-section">
+    <h2>Random User</h2>
+    <div id="userOutput" class="output-box">Loading…</div>
+  </section>
+
+  <!-- Bar Graph -->
+  <section>
+    <h2>Top 10 Cryptos — Market Cap</h2>
+    <canvas id="cryptoChart"></canvas>
+  </section>
+
+</main>
+
+<footer>
+  <p>Powered by Sodaro • Built for Lab 8</p>
+</footer>
+
+<script src="app.js"></script>
+
 </body>
 </html>
