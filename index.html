@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sodaro Data Sync | Lab 8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>SODARO DATA SYNC</h1>
+    <p class="subtitle">Offline Persistence • API Intelligence • IndexedDB</p>
+  </header>
+
+  <main>
+    <section id="controls">
+      <button id="fetchBtn">Fetch Latest Data</button>
+      <p id="status"></p>
+    </section>
+
+    <section class="data-section">
+      <h2>Bitcoin Price</h2>
+      <div id="btcOutput" class="output-box">No data yet…</div>
+    </section>
+
+    <section class="data-section">
+      <h2>Random User</h2>
+      <div id="userOutput" class="output-box">No data yet…</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by Sodaro • Lab 8: Local Storage + IndexedDB</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
